@@ -97,3 +97,109 @@ a {
   color:var(--navy);
   padding:.2em;
 }
+
+/* CONTENT */
+#row {
+  flex-direction: row;
+}
+
+#column {
+  flex-direction: column;
+}
+
+.page-wrapper {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-section .headerh2 {
+  border-right: 2px solid var(--navy);
+  width: 25%;
+  color: var(--navy);
+  margin-bottom: 2em;
+  font-size: 3em;
+}
+
+.page-section .content {
+  width: 74%;
+  color: var(--navy);
+  margin-bottom: 2em;
+  padding: 0 20px;
+}
+
+#myworks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+      "surfreport surfreport"
+      "ledwall calculator"
+      "pastelpuzzels runbuddy";
+}
+.works {
+  display: grid;
+  align-content: end;
+  margin: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:175px;
+}
+
+#surfreport {
+  grid-area: surfreport;
+  background-image:linear-gradient(to bottom, rgba(68, 88, 119, 0.7), rgba(68, 88, 119, 0.8)), url(../../images/02-portfolio-1.jpg);
+}
+#surfreport:hover {
+  background-image:url(../../images/02-portfolio-1.jpg);
+}
+#ledwall {
+  grid-area: ledwall;
+  background-image:linear-gradient(to bottom, rgba(68, 88, 119, 0.7), rgba(68, 88, 119, 0.8)), url(../../images/02-portfolio-2.jpg);
+}
+#ledwall:hover {
+  grid-area: ledwall;
+  background-image:url(../../images/02-portfolio-2.jpg);
+}
+#calculator {
+  grid-area: calculator;
+  background-image:linear-gradient(to bottom, rgba(68, 88, 119, 0.7), rgba(68, 88, 119, 0.8)), url(../../images/02-portfolio-3.jpg);
+}
+#calculator:hover {
+  grid-area: calculator;
+  background-image:url(../../images/02-portfolio-3.jpg);
+}
+#pastelpuzzels {
+  grid-area: pastelpuzzels;
+  background-image:linear-gradient(to bottom, rgba(68, 88, 119, 0.7), rgba(68, 88, 119, 0.8)), url(../../images/02-portfolio-4.jpg);
+}
+#pastelpuzzels:hover {
+  background-image:url(../../images/02-portfolio-4.jpg);
+}
+#runbuddy {
+  grid-area: runbuddy;
+  background-image:linear-gradient(to bottom, rgba(68, 88, 119, 0.7), rgba(68, 88, 119, 0.8)), url(../../images/02-portfolio-3.jpg);
+}
+#runbuddy:hover {
+  background-image:url(../../images/02-portfolio-3.jpg);
+}
+.works .innercontent {
+  background: var(--aqua);
+  padding: 5px;
+  width: 35%;
+}
+.works h2 {
+  font-size: 22px;
+}
+.works p {
+  font-size: 12px;
+}
+
+#myworks div {
+    transition: ease-in 1000ms;
+}
