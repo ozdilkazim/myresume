@@ -204,3 +204,17 @@ a {
 #myworks div {
     transition: ease-in 1000ms;
 }
+
+.contact ul {
+  display: flex;
+  list-style: none;
+  margin-block-start: 0.3em;
+  margin-block-end: 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact ul li {
+  display: inline;
+  padding: 0.1em 0.5em;
+}
